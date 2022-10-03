@@ -25,6 +25,7 @@ body{
     font-size:2rem;
     font-style: none;
     color: white;
+    letter-spacing: 2px;
 }
 
 
@@ -35,6 +36,21 @@ body{
     /* background: linear-gradient(180deg, rgb(#155369) 30%, rgb(#04232e), rgb(0, 0, 0) 80%); */
     background: linear-gradient(90deg, #155369 0%, #0e3847 35%, #072935 100%);
     
+}
+@media (max-width: 600px){
+    .flex-head{
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px 20px 20px;
+        align-items: center;
+    }
+    .flex-main{
+        display: flex;
+        flex-direction: column;
+    }
+    #titulo{
+        margin-bottom: 5px;
+    }
 }
 
 .flex-foot{
@@ -49,6 +65,7 @@ body{
 }
 
 #red{   
+    size: 1vw;
     padding-left: 30px;
 }
 #red img:hover{
