@@ -1,0 +1,30 @@
+.flex-main{
+    align-items: center;
+    justify-content: center;
+}
+#proyecto-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    width: 80px;
+    height: 40px;
+    border-radius: 9px;
+    border: 0;
+    background-color: #217373;
+    color: white;
+}
+button:hover{
+    transform: scale(1.1);
+    background-color: #1d5f5f;
+}
+img{
+    border-radius: 10px;
+}
+
+img:hover{
+    animation-name:inherit;
+    transform: scale(2);
+   
+}

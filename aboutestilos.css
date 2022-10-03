@@ -1,0 +1,35 @@
+.flex-main{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.cabecera{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.cabecera img{
+    margin-right: 50px;
+}
+
+.flex-imagenes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.flex-imagenes img{
+    margin: 0 50px 0 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+img:hover{
+    transform: scale(1.4);
+    z-index: 100;
+    
+}
+
+img:target{
+    transform: rotate(90deg);
+}

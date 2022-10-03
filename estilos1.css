@@ -1,0 +1,31 @@
+.presentacion{
+    font-size: 5vh;
+    color: black;
+    
+}
+
+.flex-main{
+    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(90deg, rgb(#155369), rgb(#04232e));
+}
+.contenedor-main{
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+
+}
+.flex-main div{
+    font-style: italic;
+    color: white;
+}
+pre{
+    color: #84B026;
+    /* background-color: white; */
+    letter-spacing: 1px;
+    padding-right: 40px;
+}
