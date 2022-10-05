@@ -2,13 +2,25 @@
     align-items: center;
     justify-content: center;
 }
-#proyecto-1{
+#img-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+#img-info div{
+    margin-left: 10px;
+    width: 15vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+}
+#pro{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 button{
-    width: 80px;
+    width: 150px;
     height: 40px;
     border-radius: 9px;
     border: 0;
@@ -21,10 +33,28 @@ button:hover{
 }
 .img-proy{
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);
 }
 
 .img-proy:hover{
     animation-name:inherit;
     transform: scale(2);
    
+}
+
+@media (max-width: 600px){
+    #img-info{
+        display: flex;
+        flex-direction: column;
+    }
+    #img-info div{
+        margin-top: 10px;
+        width: 80vw;
+    }
+    #pro{
+        margin-top: 50px;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+    }
 }
