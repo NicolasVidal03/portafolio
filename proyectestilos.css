@@ -26,6 +26,7 @@ button{
     border: 0;
     background-color: #217373;
     color: white;
+    border:2px white solid;
 }
 button:hover{
     transform: scale(1.1);
@@ -33,14 +34,15 @@ button:hover{
 }
 .img-proy{
     border-radius: 10px;
+    border: rgb(20, 14, 41) solid 1px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);
 }
 
 .img-proy:hover{
     animation-name:inherit;
     transform: scale(2);
-   
 }
+
 
 @media (max-width: 600px){
     #img-info{

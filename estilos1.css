@@ -18,6 +18,9 @@
     align-items: center;
     margin-bottom: 50px;
 }
+.contenedor-main img{
+    filter: opacity(100);
+}
 
 .flex-main div:nth-child(1){
     font-style: italic;
@@ -39,16 +42,30 @@ pre{
     animation-duration: 1.5s;
     animation-name: slideback;
 }
+.contenedor-main img{
+    animation: 3s;
+    animation-name: transparencia;
+}
 
 
 @keyframes slideback{
     from{
         margin-top: 100%;
         width: 300%;
+        color: rgba(255, 255, 255, 0);
     }
     to{
         margin-bottom: 0%;
         width: 100%;
+        color: white;
+    }
+}
+@keyframes transparencia{
+    from{
+        filter: opacity(0);
+    }
+    to{
+        filter: opacity(100);
     }
 }
 
