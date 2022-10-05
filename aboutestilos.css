@@ -11,30 +11,18 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
-@media (max-width: 600px){
-    .cabecera{
-        display: flex;
-        flex-direction: column;
-    }
-    .img-yo{
-        margin-bottom: 10px;
-    }
-    .flex-imagenes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .flex-imagenes img{
-        margin-bottom: 10px;
-    }
-}
+
+
 
 .descrip{
     background-color: rgb(20, 68, 85);
     padding: 15px 10px 15px 10px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(4, 12, 15, 0,6);
+    box-shadow: 0 0 15px rgba(4, 12, 15, 1);
     width: 70%;
+}
+.descrip:hover{
+    background-color: rgb(23, 71, 88);
 }
 .cabecera .img-yo{
     
@@ -45,6 +33,7 @@
 
 .flex-imagenes{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-bottom: 30px;
 }
@@ -55,11 +44,64 @@
     border-radius: 10px;
 }
 .flex-imagenes img:hover{
-    transform: scale(1.4)  translate(-20px, -50px);
+    transform: scale(1.4)  translate(0px, -30px);
     z-index: 100;
     
 }
 
 img:target{
     transform: rotate(90deg);
+}
+#imgs1{
+    margin-top: 30px;
+    display: flex;
+    /* flex-direction: column; */
+}
+#imgs2{
+    margin-top: 30px;
+    display: flex;
+    /* flex-direction: column; */
+}
+#img-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+#img-info div{
+    margin: 0 17px 0 17px;
+    padding: 6px 3px 6px 3px;
+    background-color: rgba(0, 0, 0, 0.192);
+    border-radius: 8px;
+}
+
+@media (max-width: 600px){
+    .cabecera{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cabecera .img-yo{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .flex-imagenes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-imagenes img{
+        margin-bottom: 10px;
+    }
+    #imgs1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #imgs2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
 }

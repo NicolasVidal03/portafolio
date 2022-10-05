@@ -19,11 +19,11 @@ button:hover{
     transform: scale(1.1);
     background-color: #1d5f5f;
 }
-img{
+.img-proy{
     border-radius: 10px;
 }
 
-img:hover{
+.img-proy:hover{
     animation-name:inherit;
     transform: scale(2);
    
