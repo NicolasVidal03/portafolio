@@ -24,16 +24,21 @@ body{
 
 }
 #titulo a{
+    margin-left: 15px;
     font-size:2rem;
     text-decoration: none;
     color: white;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
-#titulo a:hover{
+.portafolio:hover{
     color: rgb(170, 170, 170);
-
+transform: scale(1.1);
 }
 
+.portafolio{
+    display: flex;
+    align-items: center;
+}
 
 .flex-main{
     display: flex;
@@ -75,6 +80,11 @@ body{
 }
 #info a:hover{
     color: rgb(170, 170, 170);
+}
+
+.flex-head{
+    animation-duration: 3s;
+    animation-name: headaparece;
 }
 
 @media (max-width: 600px){

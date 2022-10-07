@@ -82,10 +82,11 @@
 }
 #tit-con{
     letter-spacing: 2px;
-    font-size: 2.4vw;
+    font-size: 2.2vw;
     text-decoration:underline;
     margin-top: 15px;
     margin-bottom: 10px;
+    text-align: center;
 }
 #conocimientos div:nth-child(3){
     background-color: rgba(0, 0, 0, 0.37);
@@ -112,11 +113,12 @@
         flex-direction: column;
         align-items: center;
     }
-    .flex-imagenes img{
+    .flex-imagenes .img-about{
         margin-left: 0;
         margin-right: 0;
 
     }
+    
     #imgs1{
         display: flex;
         flex-direction: column;
@@ -135,7 +137,7 @@
         margin-bottom: 20px;
     }
     #tit-con{
-        font-size: 4vw;
+        font-size: 5vw;
     }
     .descrip{
         font-size: 16px;

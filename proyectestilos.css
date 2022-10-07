@@ -7,7 +7,7 @@
     align-items: center;
     margin-bottom: 15px;
 }
-#img-info div{
+#img-info #desc-proy{
     margin-left: 10px;
     width: 15vw;
     background-color: rgba(0, 0, 0, 0.3);
@@ -32,13 +32,55 @@ button:hover{
     transform: scale(1.1);
     background-color: #1d5f5f;
 }
-.img-proy{
-    border-radius: 10px;
+
+
+
+.slider-frame{
+    height: auto;
+    width: 300px;
+    /* margin: 50px auto 0; */
+    padding: 0px 0 0 0;
+    overflow: hidden;
+    
+    /* border-radius: 10px;
     border: rgb(20, 14, 41) solid 1px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.603); */
 }
 
-.img-proy:hover{
+.slider-frame ul{
+    display: flex;
+    padding: 0 0 0 0;
+    width: 200%;
+    animation: slide 6s infinite alternate ease-in-out;
+
+}
+
+.slider-frame li{
+    list-style: none;
+    padding: 0 0 0 0;
+    width: 100%;
+    border-radius: 10px;
+    border: rgb(20, 14, 41) solid 1px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.603);
+}
+
+.slider-frame img{
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 0;
+
+    border-radius: 10px;
+}
+
+@keyframes slide{
+    0%{margin-left: 0%; }
+    45%{margin-left: 0%;}
+
+    50%{margin-left: -100%;}
+    100%{margin-left: -100%;}
+}
+
+.slider-frame:hover{
     animation-name:inherit;
     transform: scale(2);
 }
@@ -49,7 +91,7 @@ button:hover{
         display: flex;
         flex-direction: column;
     }
-    #img-info div{
+    #img-info #desc-proy{
         margin-top: 10px;
         width: 80vw;
     }
